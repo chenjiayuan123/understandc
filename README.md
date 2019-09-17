@@ -1,1 +1,1 @@
-understand c init
+了解c init
