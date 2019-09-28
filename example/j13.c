@@ -1,12 +1,25 @@
 #include <stdio.h>
-int main(void) {
-    int i, no,sum;
-    sum =0;
-    printf("请输入一个整数：");
-    scanf("%d",&no);
-    for(int i=0 ; i<=no ; i++){
-    sum += i;
+
+/*连续显示出n个字符ch*/
+void put_chars(int ch, int n) {
+    while (n-- > 0)
+        putchar(ch);
+}
+
+int main(void)
+{
+    int i, len;
+
+    printf("生成一个直角在右下方的等腰直角三角形。\n");
+    printf("短边：");
+    scanf("%d", &len);
+
+    for (i = 1; i <= len; i++)
+    {
+        put_chars(' ', len - i);
+        put_chars('*', i);
+        putchar('\n');
     }
-    printf("和为%d\n",sum);
+
     return 0;
 }

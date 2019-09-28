@@ -1,26 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void){
+
 	
-int retry;
-
-	do{
-		int no;
-
-		printf(" 请输入一个整数");
-		scanf("%d", &no);
-
-		if (no == 0)
-			puts("该整数为0.");
-		else if(no > 0)
-			puts("该整数为正数");
-		else
-			puts("该整数为负数");
-		printf("要重复一次吗？ 【YES……0/NO………9】：");
-		scanf("%d", &retry);
-
-
-	}while (retry == 0 );
-
+	int x[5];
+	
+	for(int i =0 ;i < 5;i++){
+	
+		x[i] = i;
+	
+		printf("x[%d] = %d\n",i,x[i]);
+	
+	}
+	
 	return 0;
 }

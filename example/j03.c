@@ -1,17 +1,15 @@
 #include <stdio.h>
-int main(void){
-	int no;
-	 printf("请输入一个整数:");
-	 scanf("%d", &no);
 
-	 while ( no >= 0) {
+int main(void) {
 
-	 	printf("%d ", no );
-	 	no--;
-	 	printf("\n");
+    int i;
 
-	 }
-	 	// printf("\n");
+    int v[5] = {5, 4, 3, 2, 1};
 
-	 return 0;
+    for (i = 0; i < 5; i++) {
+
+        printf("v[%d] = %d\n", i, v[i]);
+    }
+
+    return 0;
 }

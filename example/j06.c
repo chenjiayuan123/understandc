@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int i, no;
+#define NUMBER 10
 
-	printf("请输入一个正整数：");
-	scanf("%d", &no);
-	i = 2;
-	while (no >= i) {
-		printf("%d", i);
-		i = i + 2;
-		printf ("\n");
-	}
-	return 0;
+int main(void) {
+    int b;
+    double a;
+    a = b == 1.5;
+
+    printf("%f\n%d\n",a,b);
+
+    return 0;
 }

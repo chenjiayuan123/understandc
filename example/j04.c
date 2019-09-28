@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int no;
+int main(void) {
 
-    printf("请输入一个正整数：");
-    scanf("%d", &no);
+    int i;
+    int a[5] = {17, 23, 36};
+    int b[5];
 
-    while (no >= 1) {
-        printf("%d ", no--);
+    for (i = 0; i < 5; i++) {
+
+        b[i] = a[4 - i];
     }
 
-    if (no == 0){
-    	printf("\n");
+    puts("  a   b");
+    puts("---------");
+
+    for (i = 0; i < 5; i++) {
+
+        printf("%4d%4d\n", a[i], b[i]);
     }
-	
+
     return 0;
 }
-

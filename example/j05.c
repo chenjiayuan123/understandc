@@ -1,18 +1,33 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int i, no;
+#define NUMBER 10
 
-    printf("请输入一个正整数：");
-    scanf("%d", &no);
+int main(void) {
 
-    i = 1;
-    while (i <= no){
-        printf("%d ", i++);
+    int i;
+    int x[NUMBER];
+
+    for (i = 0; i < NUMBER; i++) {
+
+        printf("x[%d]:", i);
+
+        scanf("%d", &x[i]);
     }
-    if (no == 0){
-    	printf("\n");
+
+    for (i = 0; i < 3; i++) {
+
+        int temp = x[i];
+
+        x[i] = x[6 - i];
+
+        x[6 - i] = temp;
+    }
+
+    puts("倒序排列了");
+
+    for (i = 0; i < NUMBER; i++) {
+
+        printf("%d\n", x[i]);
     }
 
     return 0;
